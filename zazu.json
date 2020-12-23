@@ -1,0 +1,23 @@
+{
+  "name": "zazu-bible",
+  "version": "1.0.0",
+  "description": "Zazu plugin for finding bible passages.",
+  "icon": "icon.png",
+  "blocks": {
+    "input": [
+      {
+        "id": "Bible",
+        "type": "RootScript",
+        "script": "src/bible.js",
+        "connections": ["Display"]
+      }
+    ],
+    "output": [
+      {
+        "id": "Display",
+        "type": "Preview",
+        "message": "{value}"
+      }
+    ]
+  }
+}
